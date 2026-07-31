@@ -1,7 +1,25 @@
 aid: openbay
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/openbay.png
 name: Openbay
-description: Openbay is a company surfaced as a portfolio company of a16z, gv and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Openbay is an award-winning online automotive service platform and marketplace
+  that connects vehicle owners with local repair shops and service providers, offering upfront
+  estimates, online booking, messaging, and payment. Its consumer marketplace lets drivers
+  compare and book automotive repair and maintenance, while Openbay+ embeds that commerce into
+  partner and OEM channels and Openbay Otis provides a SaaS platform for repair shops. Backed by
+  a16z and GV, the company was added to the API Evangelist network as a portfolio lead; this pass
+  found no publicly accessible self-serve developer API surface (the marketing site and consumer
+  app are Cloudflare-protected and expose no real /.well-known documents or llms.txt).
 url: https://raw.githubusercontent.com/api-evangelist/openbay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,6 +33,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Automotive
+- Automotive Service
+- Auto Repair
+- Marketplace
+- Consumer
+- Payments
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/openbay-domain-security.yml
 - type: Website
+  url: https://www.openbay.com/
+- type: Blog
+  url: https://blog.openbay.com/
+- type: Login
   url: https://app.openbay.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
